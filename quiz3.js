@@ -2,7 +2,7 @@ let score = 0;
 let questionTimer;
 let totalTimer;
 let timeLeft = 10;
-let totalTime = 180; // Total waktu 2 menit
+let totalTime = 30; // Total waktu 2 menit
 let questions = [
     { text: "Apakah Miya adalah hero tipe Marksman?", answer: true },
     { text: "Apakah tank adalah role utama Ling?", answer: false },
