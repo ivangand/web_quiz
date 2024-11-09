@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Bootstrap CSS (use CDN for quick styling) -->
+    <style>
+        .quiz-list h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .quiz-list p {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .quiz-btn {
+            display: block;
+            text-align: center;
+            font-size: 1.1rem;
+            padding: 12px 25px;
+            margin: 10px 0;
+            border-radius: 50px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .quiz-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pilih_quiz.html">Pilih Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tutorial.html">Tutorial</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pilih Quiz Section -->
+    <section class="quiz-list">
+        <div class="container">
+            <h2>Pilih Quiz yang Ingin Anda Ikuti</h2>
+            <p>Pilih salah satu quiz di bawah ini untuk mulai bermain!</p>
+            <a href="quiz1.html" class="quiz-btn">Quiz 1: Negara Asia Tenggara</a>
+            <a href="quiz2.html" class="quiz-btn">Quiz 2: Program Komputer</a>
+            <a href="quiz3.html" class="quiz-btn">Quiz 3: Mobile Legends</a>
+            <a href="index.html" class="quiz-btn">Quiz 4: Tentang Indonesia</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        function goBackToStart() {
+            window.location.href = "index.html"; // Redirect to home page
+        }
+    </script>
+
+</body>
+
+</html>

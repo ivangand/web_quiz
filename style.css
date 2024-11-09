@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('https://wallpapercave.com/wp/wp6545483.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #ffdd57;
+    text-shadow: 0 0 10px #ffdd57, 0 0 20px #ffdd57;
+}
+
+.score,
+.timer {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.question-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.btn.true {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn.true:hover {
+    background-color: #218838;
+}
+
+.btn.false {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn.false:hover {
+    background-color: #c82333;
+}
+
+.feedback {
+    font-size: 1.1em;
+    color: #ffdd57;
+}
+
+.timer {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ff0000;
+}
+
+.start-screen {
+    text-align: center;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.start-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 15px white;
+}
+
+/* Gaya untuk tombol Lanjut */
+#next-button {
+    padding: 12px 24px;
+    font-size: 1em;
+    color: #ffffff;
+    background: linear-gradient(135deg, #6d5dfc, #b967ff);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#next-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(128, 0, 255, 0.6);
+}
+
+#next-button:active {
+    transform: scale(1);
+    box-shadow: 0 2px 10px rgba(128, 0, 255, 0.4);
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #ffdd57;
+    color: black;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar a {
+        padding: 15px;
+        font-size: 1.5em;
+    }
+}
+
+.welcome-message {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+.welcome-message h1 {
+    color: #4a90e2;
+    font-size: 2em;
+}
+.welcome-message p {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+.btn-primary {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    
+}
+
+/* Styling khusus tombol */
+.start-quiz-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Styling untuk Welcome Message */
+.welcome-message {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Menambahkan jarak antara teks dan tombol */
+.welcome-message p {
+    margin-bottom: 20px;
+}
+
+/* Style untuk tombol di halaman total score */
+#total-score-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#total-score-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#total-score-container button:hover {
+    background-color: #0056b3;
+}
