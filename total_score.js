@@ -8,7 +8,7 @@ window.onload = function () {
 
     // Menampilkan pesan sesuai dengan skor akhir
     if (finalScore >= 80) {
-        finalMessageElement.textContent = "Luar biasa! Anda sangat mengenal Indonesia!";
+        finalMessageElement.textContent = "Luar biasa! Anda sangat hebat!";
     } else if (finalScore >= 50) {
         finalMessageElement.textContent = "Bagus! Pengetahuan Anda cukup baik.";
     } else {
